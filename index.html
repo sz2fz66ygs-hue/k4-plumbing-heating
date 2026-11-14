@@ -4,275 +4,132 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>K4 Plumbing & Heating | Honest Plumbing. Fair Prices. No Surprises.</title>
-<meta name="description" content="Fully insured plumber with 5+ years experience in Greater Manchester. Transparent pricing, no hidden costs. Boiler repair, leak fixes, bathrooms, heating and more.">
+<meta name="description" content="Fully insured plumber with 5+ years experience in Greater Manchester. Transparent pricing, no hidden costs.">
 <style>
 :root {
   --primary: #2a2a2a;
-  --gray: #5a5a5a;
-  --light-gray: #f4f4f4;
-  --bg: #e8e8e8;
-  --accent: #1a1a1a;
+  --bg: #f5f5f5;
   --text: #222;
   --white: #fff;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--bg); }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+body { font-family: system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--bg); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
 header {
-  position: sticky; top: 0; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.08); z-index: 1000;
+  position: sticky; top: 0; background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.08); z-index: 1000;
   display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem;
 }
-.logo { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; color: var(--primary); font-size: 1.4rem; }
-.logo-icon { width: 48px; height: 48px; background: #4a4a4a; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; }
+.logo { font-weight: 700; font-size: 1.4rem; color: var(--primary); }
 nav a { margin-left: 1.5rem; text-decoration: none; color: var(--primary); font-weight: 500; }
-nav a:hover { color: #000; }
-.btn { display: inline-block; background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
-.btn:hover { background: #000; transform: translateY(-2px); }
+.btn { display: inline-block; background: #222; color: white; padding: 0.7rem 1.4rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
 .btn-whatsapp { background: #25D366; }
-.btn-whatsapp:hover { background: #128C7E; }
-.hero {
-  background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
-  color: white; padding: 6rem 0; text-align: center;
-}
-.hero h1 { font-size: 2.8rem; margin-bottom: 1rem; line-height: 1.2; }
-.hero p { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; }
-.hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-section { padding: 5rem 0; }
-section h2 { text-align: center; font-size: 2.2rem; color: var(--primary); margin-bottom: 1rem; }
-.subtitle { text-align: center; max-width: 700px; margin: 0 auto 3rem; color: #555; }
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-.card {
-  background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
-.card h3 { color: var(--primary); margin-bottom: 0.5rem; }
-.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center; }
-.badge { background: white; padding: 1.5rem; border-radius: 12px; }
-.badge strong { display: block; color: var(--primary); font-size: 1.1rem; margin-bottom: 0.5rem; }
-.quote-list details { background: white; margin-bottom: 0.75rem; border-radius: 8px; overflow: hidden; }
-.quote-list summary { padding: 1rem 1.5rem; cursor: pointer; font-weight: 600; color: var(--primary); background: #f8f9fa; }
-.quote-list details[open] summary { background: var(--primary); color: white; }
-.quote-list p { padding: 1rem 1.5rem; }
-.testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-.testimonial { background: white; padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--primary); }
-.stars { color: #f4c430; }
-.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-.gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
-.faq details { background: white; margin-bottom: 0.5rem; border-radius: 8px; }
-.faq summary { padding: 1rem; cursor: pointer; font-weight: 600; }
+.hero { background: #333; color: white; padding: 5rem 0; text-align: center; }
+.hero h1 { font-size: 2.4rem; margin-bottom: 1rem; }
+section { padding: 4rem 0; }
+section h2 { text-align: center; font-size: 2rem; margin-bottom: 1rem; }
+.subtitle { text-align: center; max-width: 650px; margin: 0 auto 2.5rem; color: #555; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+.card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.quote-list details { background: white; margin-bottom: 0.5rem; border-radius: 6px; }
+.quote-list summary { padding: 1rem; cursor: pointer; font-weight: 600; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-form input, form textarea, form button { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
-form button { background: var(--primary); color: white; border: none; cursor: pointer; font-weight: 600; }
 .floating-wa {
-  position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px;
-  border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; text-decoration: none; transition: transform 0.3s;
+  position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 56px; height: 56px;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem;
+  text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
-.floating-wa:hover { transform: scale(1.1); }
-footer { background: var(--primary); color: white; text-align: center; padding: 2rem; }
-@media (max-width: 768px) {
-  .hero h1 { font-size: 2rem; }
+footer { background: #222; color: white; text-align: center; padding: 2rem; }
+@media (max-width: 700px) {
   .contact-grid { grid-template-columns: 1fr; }
   nav { display: none; }
+  .hero h1 { font-size: 1.9rem; }
 }
-.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
 </style>
 </head>
 <body>
 <header>
-  <div class="logo">
-    <div class="logo-icon">K4</div>
-    K4 Plumbing & Heating
-  </div>
+  <div class="logo">K4 Plumbing & Heating</div>
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#quotes">Prices</a>
-    <a href="#why">Why Us</a>
+    <a href="#prices">Prices</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a href="https://wa.me/44XXXXXXXXXX?text=Hi%20Kai,%20I%20need%20a%20plumbing%20quote" class="btn btn-whatsapp">WhatsApp</a>
+  <a href="https://wa.me/447888142154?text=Hi%20Kai,%20I%20need%20a%20plumbing%20quote" class="btn btn-whatsapp">WhatsApp</a>
 </header>
 
 <section class="hero">
   <div class="container">
     <h1>Honest Plumbing. Fair Prices.<br>No Surprises.</h1>
-    <p>Fully insured plumber with 5+ years experience in Greater Manchester.<br>Clear pricing. Straightforward service. You deal directly with me.</p>
-    <div class="hero-btns">
-      <a href="https://wa.me/44XXXXXXXXXX?text=Hi%20Kai,%20I'd%20like%20a%20quote%20for%20plumbing%20work" class="btn btn-whatsapp">Get a Quote on WhatsApp</a>
-      <a href="tel:+44XXXXXXXXXX" class="btn">Call Now</a>
+    <p>Fully insured plumber based in Greater Manchester.<br>Clear pricing. Straightforward service. You deal directly with me.</p>
+    <div style="margin-top:1.5rem;">
+      <a href="https://wa.me/447888142154?text=Hi%20Kai,%20I'd%20like%20a%20quote" class="btn btn-whatsapp">Get a Quote on WhatsApp</a>
+      <a href="tel:07888142154" class="btn" style="margin-left:0.5rem;">Call 07888 142154</a>
     </div>
   </div>
 </section>
 
-<section id="about" class="fade-in">
+<section id="about">
   <div class="container">
-    <h2>About K4 Plumbing & Heating</h2>
-    <p class="subtitle">Hi, I'm Kai. I run K4 as a sole trader based in Hyde, Greater Manchester. With over 5 years of hands-on experience and a Level 3 Plumbing qualification, I focus on doing the job properly, explaining everything clearly, and keeping costs fair.</p>
-    <div class="cards">
-      <div class="card">
-        <h3>Fully Insured</h3>
-        <p>Public liability insurance for your peace of mind. Work carried out safely and professionally.</p>
-      </div>
-      <div class="card">
-        <h3>5+ Years Experience</h3>
-        <p>Qualified and experienced across domestic plumbing and heating. From simple repairs to full installations.</p>
-      </div>
-      <div class="card">
-        <h3>Honest & Affordable</h3>
-        <p>No call-out fees for quotes. Transparent pricing. A cheaper, more personal alternative to big companies — without the surprises.</p>
-      </div>
-      <div class="card">
-        <h3>Local & Reliable</h3>
-        <p>Based in Greater Manchester. Same-day service where possible. You deal directly with me from start to finish.</p>
-      </div>
-    </div>
+    <h2>About</h2>
+    <p class="subtitle">Hi, I'm Kai. I run K4 as a sole trader. Over 5 years experience, fully insured, and focused on doing the job properly at a fair price with no hidden extras.</p>
   </div>
 </section>
 
-<section id="services" class="fade-in" style="background:white;">
+<section id="services" style="background:white;">
   <div class="container">
     <h2>Services</h2>
-    <p class="subtitle">Everyday plumbing and heating jobs done right. Free quotes. No hidden extras.</p>
+    <p class="subtitle">Everyday plumbing jobs. Free quotes. No gas or boiler work.</p>
     <div class="cards">
-      <div class="card"><h3>Boiler Repair & Installation</h3><p>Fault finding, repairs, and new installations. Clear advice on the best option.</p></div>
-      <div class="card"><h3>Leak Repairs</h3><p>Pipe leaks, dripping taps, toilet leaks — fixed properly so they stay fixed.</p></div>
-      <div class="card"><h3>Bathroom Plumbing</h3><p>Taps, basins, toilets, showers. Tidy work and full testing before I leave.</p></div>
-      <div class="card"><h3>Central Heating</h3><p>Radiators, valves, system issues, powerflushing where needed.</p></div>
-      <div class="card"><h3>Emergency Call-outs</h3><p>Burst pipes, no hot water, major leaks. Fast response when you need it.</p></div>
-      <div class="card"><h3>General Plumbing</h3><p>Outside taps, pipework alterations, radiator swaps, and maintenance.</p></div>
+      <div class="card"><h3>Radiator Changes</h3><p>Like-for-like swaps or with pipe alterations.</p></div>
+      <div class="card"><h3>Tap Changes</h3><p>Kitchen and bathroom taps.</p></div>
+      <div class="card"><h3>Outside Taps</h3><p>New installations back to the kitchen or water supply.</p></div>
+      <div class="card"><h3>Leak Repairs & General Plumbing</h3><p>Leaking pipes, dripping taps, toilet issues and other domestic work.</p></div>
     </div>
   </div>
 </section>
 
-<section id="quotes" class="fade-in">
+<section id="prices">
   <div class="container">
-    <h2>Rough Quotation Guide</h2>
-    <p class="subtitle">These are approximate starting prices for common jobs. Final price is always confirmed before any work starts. No hidden costs.</p>
+    <h2>Rough Prices</h2>
+    <p class="subtitle">These are rough labour prices. Parts extra where needed. Final price confirmed before any work starts.</p>
     <div class="quote-list">
-      <details><summary>Fix a leaking tap — from £65</summary><p>Includes labour and standard parts. Confirmed on site.</p></details>
-      <details><summary>Replace a radiator valve — from £75</summary><p>Thermostatic or lockshield valves. Price depends on type and access.</p></details>
-      <details><summary>Boiler service — £85</summary><p>Full annual service with safety checks. Written report provided.</p></details>
-      <details><summary>Unblock a toilet or sink — from £70</summary><p>Most blockages cleared on first visit. No extra call-out fee.</p></details>
-      <details><summary>Install an outside tap — from £120</summary><p>Includes materials for standard installation.</p></details>
-      <details><summary>Radiator replacement — from £150</summary><p>Supply and fit. Size and style affect final price.</p></details>
+      <details><summary>Radiator – like-for-like swap — £60</summary><p>Direct swap of the same style radiator.</p></details>
+      <details><summary>Radiator with pipe altering — £85</summary><p>Includes adjusting the pipework.</p></details>
+      <details><summary>Designer radiator — £80</summary><p>Standard designer style.</p></details>
+      <details><summary>Designer radiator with pipe altering — £105</summary><p>Designer radiator plus pipework changes.</p></details>
+      <details><summary>Tap change — £55</summary><p>Standard tap replacement.</p></details>
+      <details><summary>Outside tap installation — £100</summary><p>Back onto kitchen or existing water supply.</p></details>
     </div>
-    <p style="text-align:center; margin-top:2rem;"><strong>Get an exact quote on WhatsApp — no obligation.</strong></p>
-    <div style="text-align:center;"><a href="https://wa.me/44XXXXXXXXXX?text=Hi%20Kai,%20I'd%20like%20a%20quote" class="btn btn-whatsapp">WhatsApp for Exact Price</a></div>
+    <p style="text-align:center; margin-top:2rem;"><a href="https://wa.me/447888142154?text=Hi%20Kai,%20I'd%20like%20a%20quote" class="btn btn-whatsapp">WhatsApp for Exact Price</a></p>
   </div>
 </section>
 
-<section id="why" class="fade-in" style="background:white;">
-  <div class="container">
-    <h2>Why Choose K4</h2>
-    <div class="why-grid">
-      <div class="badge"><strong>Fully Insured</strong>Public liability cover</div>
-      <div class="badge"><strong>5+ Years Experience</strong>Qualified Level 3</div>
-      <div class="badge"><strong>No Hidden Costs</strong>Price agreed first</div>
-      <div class="badge"><strong>Honest Pricing</strong>Fair and transparent</div>
-      <div class="badge"><strong>Same-Day Where Possible</strong>Fast response</div>
-      <div class="badge"><strong>Direct Contact</strong>You deal with Kai</div>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" class="fade-in">
-  <div class="container">
-    <h2>What Customers Say</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p>"Kai was punctual, explained everything clearly, and fixed the leak without any fuss. Fair price and tidy work. Would use again."</p>
-        <strong>— Local customer, Hyde</strong>
-      </div>
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p>"Honest quote, no pressure, and the job was done exactly as promised. Much better than the big companies I've used before."</p>
-        <strong>— Customer, Tameside</strong>
-      </div>
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p>"Replaced two radiators quickly and left everything clean. Clear communication throughout. Highly recommended."</p>
-        <strong>— Customer, Greater Manchester</strong>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" class="fade-in" style="background:white;">
-  <div class="container">
-    <h2>Recent Work</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400" alt="Plumbing pipes and fittings">
-      <img src="https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?w=400" alt="Modern bathroom fixtures">
-      <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400" alt="Radiator and heating system">
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Professional plumber at work">
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="fade-in">
-  <div class="container">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq">
-      <details><summary>Are you fully insured?</summary><p>Yes. I carry public liability insurance for all work carried out.</p></details>
-      <details><summary>Do you charge a call-out fee?</summary><p>No call-out fee for quotes. For emergency call-outs outside normal hours there may be a small additional charge, which is always stated upfront.</p></details>
-      <details><summary>How quickly can you attend?</summary><p>Same-day service is often available for urgent jobs. Contact me on WhatsApp for the soonest slot.</p></details>
-      <details><summary>Are the prices on the site fixed?</summary><p>They are rough starting guides. Every job is different. I always confirm the exact price before starting any work.</p></details>
-      <details><summary>What areas do you cover?</summary><p>Primarily Hyde, Tameside and Greater Manchester. Contact me to check your location.</p></details>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="fade-in" style="background:white;">
+<section id="contact" style="background:white;">
   <div class="container">
     <h2>Get in Touch</h2>
-    <p class="subtitle">Get a quick quote on WhatsApp — no obligation. Or call / email.</p>
     <div class="contact-grid">
       <div>
-        <h3>Contact Details</h3>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/44XXXXXXXXXX?text=Hi%20Kai,%20I%20need%20a%20plumbing%20quote">Message me directly</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+44XXXXXXXXXX">07XXX XXX XXX</a></p>
-        <p><strong>Email:</strong> <a href="mailto:kai@k4plumbing.co.uk">kai@k4plumbing.co.uk</a></p>
-        <p><strong>Service Area:</strong> Hyde, Tameside & Greater Manchester</p>
-        <p style="margin-top:1.5rem;"><a href="https://wa.me/44XXXXXXXXXX?text=Hi%20Kai,%20I'd%20like%20a%20quote" class="btn btn-whatsapp">WhatsApp for Quote</a></p>
+        <p><strong>WhatsApp / Phone:</strong> <a href="tel:07888142154">07888 142154</a></p>
+        <p><strong>Email:</strong> <a href="mailto:k4plumbing.heating@gmail.com">k4plumbing.heating@gmail.com</a></p>
+        <p><strong>Area:</strong> Greater Manchester</p>
+        <p style="margin-top:1.5rem;"><a href="https://wa.me/447888142154?text=Hi%20Kai,%20I%20need%20a%20quote" class="btn btn-whatsapp">WhatsApp Me</a></p>
       </div>
       <div>
-        <form onsubmit="event.preventDefault(); window.open('https://wa.me/44XXXXXXXXXX?text=' + encodeURIComponent(this.message.value || 'Hi Kai, I need a plumbing quote'), '_blank');">
-          <input type="text" placeholder="Your name" required>
-          <input type="tel" placeholder="Your phone number">
-          <textarea name="message" rows="4" placeholder="Describe the job (e.g. leaking tap, boiler not working...)"></textarea>
-          <button type="submit">Send via WhatsApp</button>
+        <form onsubmit="event.preventDefault(); window.open('https://wa.me/447888142154?text=' + encodeURIComponent(this.message.value || 'Hi Kai, I need a plumbing quote'), '_blank');">
+          <textarea name="message" rows="5" placeholder="Describe the job..." style="width:100%; padding:0.75rem; margin-bottom:1rem;"></textarea>
+          <button type="submit" class="btn" style="width:100%;">Send via WhatsApp</button>
         </form>
-        <p style="font-size:0.9rem; color:#666; margin-top:0.5rem;">The form opens WhatsApp with your message pre-filled.</p>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>K4 Plumbing & Heating • Fully Insured • Based in Greater Manchester</p>
+  <p>K4 Plumbing & Heating • Fully Insured • Greater Manchester</p>
   <p style="margin-top:0.5rem; font-size:0.9rem;">Honest plumbing. Fair prices. No surprises.</p>
 </footer>
 
-<a href="https://wa.me/44XXXXXXXXXX?text=Hi%20Kai,%20I%20need%20a%20plumbing%20quote" class="floating-wa" aria-label="WhatsApp">💬</a>
-
-<script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.1 });
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-document.querySelectorAll('nav a').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-  });
-});
-</script>
+<a href="https://wa.me/447888142154?text=Hi%20Kai,%20I%20need%20a%20plumbing%20quote" class="floating-wa" aria-label="WhatsApp">💬</a>
 </body>
 </html>
