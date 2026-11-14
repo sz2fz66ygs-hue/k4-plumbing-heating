@@ -7,32 +7,32 @@
 <meta name="description" content="Fully insured plumber with 5+ years experience in Greater Manchester. Transparent pricing, no hidden costs. Boiler repair, leak fixes, bathrooms, heating and more.">
 <style>
 :root {
-  --primary: #0a4d68;
-  --teal: #088395;
-  --accent: #05bfdb;
-  --warm: #f5f0e8;
-  --dark: #1a1a1a;
-  --text: #333;
+  --primary: #2a2a2a;
+  --gray: #5a5a5a;
+  --light-gray: #f4f4f4;
+  --bg: #e8e8e8;
+  --accent: #1a1a1a;
+  --text: #222;
   --white: #fff;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--warm); }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--bg); }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 header {
-  position: sticky; top: 0; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;
+  position: sticky; top: 0; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.08); z-index: 1000;
   display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem;
 }
 .logo { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; color: var(--primary); font-size: 1.4rem; }
-.logo-icon { width: 48px; height: 48px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
+.logo-icon { width: 48px; height: 48px; background: #4a4a4a; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem; }
 nav a { margin-left: 1.5rem; text-decoration: none; color: var(--primary); font-weight: 500; }
-nav a:hover { color: var(--teal); }
-.btn { display: inline-block; background: var(--accent); color: white; padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
-.btn:hover { background: var(--teal); transform: translateY(-2px); }
+nav a:hover { color: #000; }
+.btn { display: inline-block; background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+.btn:hover { background: #000; transform: translateY(-2px); }
 .btn-whatsapp { background: #25D366; }
 .btn-whatsapp:hover { background: #128C7E; }
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--teal) 100%);
-  color: white; padding: 6rem 0; text-align: center; position: relative;
+  background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+  color: white; padding: 6rem 0; text-align: center;
 }
 .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; line-height: 1.2; }
 .hero p { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; }
@@ -42,20 +42,20 @@ section h2 { text-align: center; font-size: 2.2rem; color: var(--primary); margi
 .subtitle { text-align: center; max-width: 700px; margin: 0 auto 3rem; color: #555; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
 .card {
-  background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+.card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
 .card h3 { color: var(--primary); margin-bottom: 0.5rem; }
 .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center; }
 .badge { background: white; padding: 1.5rem; border-radius: 12px; }
-.badge strong { display: block; color: var(--teal); font-size: 1.1rem; margin-bottom: 0.5rem; }
+.badge strong { display: block; color: var(--primary); font-size: 1.1rem; margin-bottom: 0.5rem; }
 .quote-list details { background: white; margin-bottom: 0.75rem; border-radius: 8px; overflow: hidden; }
 .quote-list summary { padding: 1rem 1.5rem; cursor: pointer; font-weight: 600; color: var(--primary); background: #f8f9fa; }
-.quote-list details[open] summary { background: var(--teal); color: white; }
+.quote-list details[open] summary { background: var(--primary); color: white; }
 .quote-list p { padding: 1rem 1.5rem; }
 .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-.testimonial { background: white; padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent); }
+.testimonial { background: white; padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--primary); }
 .stars { color: #f4c430; }
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
 .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
@@ -74,7 +74,7 @@ footer { background: var(--primary); color: white; text-align: center; padding: 
 @media (max-width: 768px) {
   .hero h1 { font-size: 2rem; }
   .contact-grid { grid-template-columns: 1fr; }
-  nav { display: none; } /* simple mobile - could enhance with menu */
+  nav { display: none; }
 }
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -260,7 +260,6 @@ footer { background: var(--primary); color: white; text-align: center; padding: 
 <a href="https://wa.me/44XXXXXXXXXX?text=Hi%20Kai,%20I%20need%20a%20plumbing%20quote" class="floating-wa" aria-label="WhatsApp">💬</a>
 
 <script>
-// Scroll animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -268,7 +267,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Smooth scroll for nav
 document.querySelectorAll('nav a').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
