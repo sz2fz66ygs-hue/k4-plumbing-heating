@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="200" height="50">
+  <defs>
+    <style>
+      .drop { fill: #111; }
+      .text { font-family: system-ui, Arial, sans-serif; font-weight: 800; fill: #111; }
+      .sub { font-family: system-ui, Arial, sans-serif; font-weight: 600; fill: #111; font-size: 14px; }
+    </style>
+  </defs>
+  <path class="drop" d="M28 8c0 0-12 18-12 28a12 12 0 0 0 24 0c0-10-12-28-12-28z"/>
+  <text class="text" x="50" y="48" font-size="42">K4</text>
+  <text class="sub" x="118" y="32">PLUMBING</text>
+  <text class="sub" x="118" y="50">& HEATING</text>
+</svg>
